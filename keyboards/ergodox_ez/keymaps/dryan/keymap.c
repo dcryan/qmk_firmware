@@ -23,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * | Tab    |   Q  |   W  |   E  |   R  |   T  |  L1  |           |  L1  |   Y  |   U  |   I  |   O  |   P  |   \    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |Hyper/Es|A / L2|   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |; / L2| Hyper/'|
+ * |All_T/Es|A / L2|   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |; / L2| All_T/'|
  * |--------+------+------+------+------+------|MO(L1)|           |MO(L1)|------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // left hand
   KC_GRV,          KC_1,           KC_2,          KC_3,    KC_4,    KC_5,    KC_LEFT,
   KC_TAB,          KC_Q,           KC_W,          KC_E,    KC_R,    KC_T,    TG(SYMB),
-  HYPR(KC_ESC),    LT(MDIA, KC_A), KC_S,          KC_D,    KC_F,    KC_G,
+  ALL_T(KC_ESC),    LT(MDIA, KC_A), KC_S,          KC_D,    KC_F,    KC_G,
   KC_LSFT,         KC_Z,           KC_X,          KC_C,    KC_V,    KC_B,    MO(SYMB),
   LT(SYMB,KC_GRV), KC_LCTL,        KC_LALT,       KC_LEFT, KC_RGHT,
                                                            ALT_T(KC_APP), KC_LGUI,
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // right hand
   KC_RGHT,      KC_6,    KC_7,    KC_8,    KC_9,       KC_0,              KC_MINS,
   TG(SYMB),     KC_Y,    KC_U,    KC_I,    KC_O,       KC_P,              KC_BSLS,
-                KC_H,    KC_J,    KC_K,    KC_L,       LT(MDIA, KC_SCLN), HYPR(KC_QUOT),
+                KC_H,    KC_J,    KC_K,    KC_L,       LT(MDIA, KC_SCLN), ALL_T(KC_QUOT),
   MO(SYMB),     KC_N,    KC_M,    KC_COMM, KC_DOT,     KC_SLSH,           KC_RSFT,
                          KC_UP,   KC_DOWN, KC_LBRC,    KC_RBRC,           TT(SYMB),
   KC_LALT, CTL_T(KC_ESC),
